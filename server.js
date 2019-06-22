@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Import routes and give the server access to them.
-require("./routing/apiRoutes.js")(routes);
-require("./routing/htmlRoutes.js")(routes);
+var routes = require("./routing/apiRoutes.js");
+var routes = require("./routing/htmlRoutes.js");
 
 app.use(routes);
 
