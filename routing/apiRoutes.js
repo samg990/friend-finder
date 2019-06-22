@@ -12,5 +12,14 @@ module.exports = function(app) {
       photo: "",
       friendDiff: 100,
     };
+
+    var userData = req.body;
+    var userName = userData.name;
+    var userScore = userData.scores;
+
+    // get users scores as a number
+    // calculate the sum of the scores
+    // loop thru all the users
+    // find the closest match
   });
 };
